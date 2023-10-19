@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== FAVICON ===============-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--=============== SWIPER CSS ===============--> 
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" media="all" href="review.css" />
+  <title>RINEVUOS</title>
+</head>  
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+            <a href="signedin.html#home" class="nav__logo">
+                <!-- <i class='bx bxs-watch nav__logo-icon'></i>  -->
+                RINEVUOS
+               <!-- <i class="fa-solid fa-earth-asia"></i>-->
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="signedin.html" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#products" class="nav__link">PRODUCTS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#new" class="nav__link">OFFERS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#" class="nav__link">SELLER</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="district.html" class="nav__link">SHOP BY DISTRICT</a>
+                    </li>
+                </ul>
+               
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <div class="nav__user" id="user">
+                  <i class="bx bx-user" aria-hidden="true"></i>
+              </div>
+
+                <div class="nav__search" id="nav-search">
+                    <i class="bx bx-search"></i>
+                </div>
+                <div>
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i  class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    
+    
+</header>
+
+<div class="cart" id="cart">
+  <i class='bx bx-x cart__close' id="cart-close"></i>
+  <h2 class="cart__title-center">MY BAG</h2>
+  <div class="cart__container">
+      <article class="cart__card">
+          <div class="cart__box">
+              <img src="image/image-product-1.jpg" alt="" class="cart__img">
+          </div>
+          <div class="cart__details">
+              <h3 class="cart__title">Tanjore Bobblehead Doll</h3>
+              <span class="cart__price">₹900</span>
+              <div class="cart__amount">
+                  <div class="cart__amount-content">
+                      <span class="cart__amount-box">
+                          <i class='bx bx-minus' ></i>
+                      </span>
+                      <span class="cart__amount-number">1</span>
+                      <span class="cart__amount-box">
+                          <i class='bx bx-plus' ></i>
+                      </span>
+                  </div>
+                  <i class='bx bx-trash-alt cart__amount-trash' ></i>
+              </div>
+          </div>
+      </article>
+      <article class="cart__card">
+          <div class="cart__box">
+              <img src="image/img2.jpg" alt="" class="cart__img">
+          </div>
+          <div class="cart__details">
+              <h3 class="cart__title">Handicrafts</h3>
+              <span class="cart__price">₹1050</span>
+
+              <div class="cart__amount">
+                  <div class="cart__amount-content">
+                      <span class="cart__amount-box">
+                          <i class='bx bx-minus' ></i>
+                      </span>
+                      <span class="cart__amount-number">1</span>
+                      <span class="cart__amount-box">
+                          <i class='bx bx-plus' ></i>
+                      </span>
+                  </div>
+                  <i class='bx bx-trash-alt cart__amount-trash' ></i>
+              </div>
+          </div>
+      </article>
+      <article class="cart__card">
+          <div class="cart__box">
+              <img src="image/img3.jpg" alt="" class="cart__img">
+          </div>
+          <div class="cart__details">
+              <h3 class="cart__title">Chettinad Masala</h3>
+              <span class="cart__price">₹850</span>
+              <div class="cart__amount">
+                  <div class="cart__amount-content">
+                      <span class="cart__amount-box">
+                          <i class='bx bx-minus' ></i>
+                      </span>
+                      <span class="cart__amount-number">1</span>
+                      <span class="cart__amount-box">
+                          <i class='bx bx-plus' ></i>
+                      </span>
+                  </div>
+                  <i class='bx bx-trash-alt cart__amount-trash' ></i>
+              </div>
+          </div>
+      </article>
+      <article class="cart__card">
+          <div class="cart__box">
+              <img src="image/img4.jpg" alt="" class="cart__img">
+          </div>
+          <div class="cart__details">
+              <h3 class="cart__title">Sungudi Saree</h3>
+              <span class="cart__price">₹980</span>
+              <div class="cart__amount">
+                  <div class="cart__amount-content">
+                      <span class="cart__amount-box">
+                          <i class='bx bx-minus' ></i>
+                      </span>
+                      <span class="cart__amount-number">1</span>
+                      <span class="cart__amount-box">
+                          <i class='bx bx-plus' ></i>
+                      </span>
+                  </div>
+                  <i class='bx bx-trash-alt cart__amount-trash' ></i>
+              </div>
+          </div>
+      </article>
+      
+  </div>
+  <div class="cart__prices">
+      <span class="cart__prices-item">4 items</span>
+      <button class="button checkout__button">CHECKOUT</button>
+      <span class="cart__prices-total">₹3780</span>
+  </div>
+</div>
+    <main>
+      <section class="product_page">
+        <section class="product">
+            <section class="product-images">
+              <div class="main-img">
+                <div class="carousel-btn previous-btn"><img src="image/icon-previous.svg" alt="previous-btn"></div>
+                <div class="carousel-btn next-btn"><img src="image/icon-next.svg" alt="next-btn"></div>
+                <img src="image/image-product-1.jpg" data-id="0" alt="product-1" width="300px">
+                <img src="image/image-product-2.jpg" data-id="1" alt="product-2" width="300px">
+                <img src="image/image-product-3.jpg" data-id="2" alt="product-3" width="300px">
+                <img src="image/image-product-4.jpg" data-id="3" alt="product-4" width="300px">
+              </div>
+              <div class="img-selector product-selector">
+                <img src="image/image-product-1-thumbnail.jpg" data-id="0" class="selected" alt="product-1-thumbnail">
+                <img src="image/image-product-2-thumbnail.jpg" data-id="1" alt="product-2-thumbnail">
+                <img src="image/image-product-3-thumbnail.jpg" data-id="2" alt="product-3-thumbnail">
+                <img src="image/image-product-4-thumbnail.jpg" data-id="3" alt="product-4-thumbnail">
+              </div>
+            </section>        
+            <section class="product-info">
+              <h3>DISTRICT: TANJORE</h3>
+              <h2 class="product-description">TANJORE BOBBLEHEAD DOLL</h2>
+              <p class="product-details">
+                  Tanjore Doll is a unique and antique product from the cultural city.
+                  The beautiful doll is well known for its elegant movements and steps like a dancer. 
+                  The doll is put together to produce slow damping movements. 
+                  The Tanjore Doll plays an integral role in the Kondapalli Art and Craft.
+              </p>
+              <div class="price-info">
+                  <div>
+                    <span class="product-price">₹900.00</span>
+                    <span class="discount">50%</span>
+                  </div>
+                  <span class="former-price">₹1800.00</span>
+              </div>
+              <div class="purchase-controls">
+                  <div class="quantity-selector">
+                    <button type="button" class="decrease-qty">-</button>
+                    <input class="qty" type="text" value="1" readonly>
+                    <button type="button" class="increase-qty">+</button>
+                  </div>
+                  <button type="button" class="add-to-cart-btn">Add to bag</button>
+              </div>
+            </section>
+        </section>
+
+        <section id="light-box">
+          <div class="product-images">
+            <svg id="close-light-box-btn" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"  fill-rule="evenodd"/></svg>
+            <div class="main-img">
+              <div class="carousel-btn previous-btn"><img src="image/icon-previous.svg" alt="previous-btn"></div>
+              <div class="carousel-btn next-btn"><img src="image/icon-next.svg" alt="next-btn"></div>
+              <img src="image/image-product-1.jpg" data-id="0" alt="product-1">
+              <img src="image/image-product-2.jpg" data-id="1" alt="product-2">
+              <img src="image/image-product-3.jpg" data-id="2" alt="product-3">
+              <img src="image/image-product-4.jpg" data-id="3" alt="product-4">
+            </div>
+            <div class="img-selector light-box-selector">
+              <img src="image/image-product-1.jpg" data-id="0" class="selected" alt="product-1-thumbnail">
+              <img src="image/image-product-2.jpg" data-id="1" alt="product-2-thumbnail">
+              <img src="image/image-product-3.jpg" data-id="2" alt="product-3-thumbnail">
+              <img src="image/image-product-4.jpg" data-id="3" alt="product-3-thumbnail">
+            </div>
+          </div>
+      </section>
+      </section>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 course-details-content">
+              <div class="course-details-card mt--40">
+                <div class="course-content">
+                  <h1 class="mb--20">Ratings</h1>
+                  <div class="row row--30">
+                    <div class="col-lg-4">
+                      <div class="rating-box">
+                        <div class="rating-number">4.8</div>
+                        <div class="rating"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+                        <span>(33 Reviews)</span> </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="review-wrapper">
+                        <div class="single-progress-bar">
+                          <div class="rating-text"> 5 <i class="fa fa-star" aria-hidden="true"></i> </div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="rating-value">23</span> </div>
+                        <div class="single-progress-bar">
+                          <div class="rating-text"> 4 <i class="fa fa-star" aria-hidden="true"></i> </div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="rating-value">3</span> </div>
+                        <div class="single-progress-bar">
+                          <div class="rating-text"> 3 <i class="fa fa-star" aria-hidden="true"></i> </div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="rating-value">2</span> </div>
+                        <div class="single-progress-bar">
+                          <div class="rating-text"> 2 <i class="fa fa-star" aria-hidden="true"></i> </div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <span class="rating-value">3</span> </div>
+                        <div class="single-progress-bar">
+                          <div class="rating-text"> 1 <i class="fa fa-star" aria-hidden="true"></i> </div>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="0" aria-valuemin="80" aria-valuemax="100"></div>
+                          </div>
+                          <span class="rating-value">2</span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-wrapper pt--40">
+                    <div class="section-title">
+                      <h3 class="mb--25">Reviews</h3>
+                    </div>
+                      <!--  Comment Box start--->
+                    <div class="edu-comment">
+                      <div class="thumbnail"> <img src="image/img22.jpg" alt="Comment Images"> </div>
+                      <div class="comment-content">
+                        <div class="comment-top">
+                          <h6 class="title">Gowrishankar</h6>
+                          <div class="rating"> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+                        </div>
+                        <span class="subtitle">“ Outstanding Review Design ”</span>
+                        <p>This product is great. I loved the craftsmanship of the artisan. Very authentic and original. These toys are traditionally handmade, finished with detailed, painted exteriors. On gently tapping this traditional Thanjavur doll, it wobbles and makes a dance like movement with pleasant expression. If this doll kept directly under a fan with adequate amount of air flow, all parts of the doll keeps dancing.</p>
+                      </div>
+                    </div>
+                      <!-- Comment Box end--->
+                      <!--  Comment Box start--->
+                      <div class="edu-comment">
+                      <div class="thumbnail"> <img src="image/img19.jpg" alt="Comment Images"> </div>
+                      <div class="comment-content">
+                        <div class="comment-top">
+                          <h6 class="title">Santhoshkumar</h6>
+                          <div class="rating"> </i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+                        </div>
+                        <span class="subtitle">“ Very Good  Design ”</span>
+                        <p>The dolls dance beautifully on touching. The expression is priceless. Good care is taken while packaging too. Strongly recommended product to everyone who wants to have traditional and authentic product from traditional artisans. The product is really good and holds high traditional value.</p>
+                      </div>
+                    </div>
+                    <div class="edu-comment">
+                      <div class="thumbnail"> <img src="image/img20.jpg" alt="Comment Images"> </div>
+                      <div class="comment-content">
+                        <div class="comment-top">
+                          <h6 class="title">Makeshwar</h6>
+                          <div class="rating"> </i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> </div>
+                        </div>
+                        <span class="subtitle">“ Nice Product Design ”</span>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                      </div>
+                    </div>
+                      <!--  Comment Box end--->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+</a>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script type="module" src="products.js"></script>
+<!--=============== MAIN JS ===============-->
+<script  src="assets/js/main.js"></script><!--=============== MAIN JS ===============-->
+
+</body>
+</html>

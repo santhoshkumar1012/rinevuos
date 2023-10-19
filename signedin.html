@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>RINEVUOS</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">
+                    <!-- <i class='bx bxs-watch nav__logo-icon'></i>  -->
+                    RINEVUOS
+                   <!-- <i class="fa-solid fa-earth-asia"></i>-->
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">PRODUCTS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">OFFERS</a>
+                        </li>
+                        <!--<li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>-->
+                        <li class="nav__item">
+                            <a href="" class="nav__link">SELLER</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="district.html" class="nav__link">SHOP BY DISTRICT</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <div class="nav__user" id="user">
+                        <i class="bx bx-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="nav__search" id="nav-search">
+                        <i class="bx bx-search"></i>
+                    </div>
+                    <div>
+                        <i class='bx bx-moon change-theme' id="theme-button"></i>
+                    </div>
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+            <h2 class="cart__title-center">MY BAG</h2>
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="image/image-product-1.jpg" alt="" class="cart__img">
+                    </div>
+                    <div class="cart__details">
+                        <h3 class="cart__title">Tanjore Bobblehead Doll</h3>
+                        <span class="cart__price">₹900</span>
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+                                <span class="cart__amount-number">1</span>
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="image/img2.jpg" alt="" class="cart__img">
+                    </div>
+                    <div class="cart__details">
+                        <h3 class="cart__title">Handicrafts</h3>
+                        <span class="cart__price">₹1050</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+                                <span class="cart__amount-number">1</span>
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="image/img3.jpg" alt="" class="cart__img">
+                    </div>
+                    <div class="cart__details">
+                        <h3 class="cart__title">Chettinad Masala</h3>
+                        <span class="cart__price">₹850</span>
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+                                <span class="cart__amount-number">1</span>
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="image/img4.jpg" alt="" class="cart__img">
+                    </div>
+                    <div class="cart__details">
+                        <h3 class="cart__title">Sungudi Saree</h3>
+                        <span class="cart__price">₹980</span>
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+                                <span class="cart__amount-number">1</span>
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            <div class="cart__prices">
+                <span class="cart__prices-item">4 items</span>
+                <button class="button checkout__button">CHECKOUT</button>
+                <span class="cart__prices-total">₹3780</span>
+            </div>
+        </div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                     <a href="products.html"> <img src="image/image-product-1.jpg" alt="" class="home__img"></a>  
+                    </div>
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/profile.php?id=100074073552733&mibextid=2JQ9oc" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://x.com/santhosh33_?t=nc9SxjWTg6PgFgh-4m7l5g&s=08" target="_blank" class="home__social-link">
+                            X Corp
+                        </a>
+                        <a href="https://instagram.com/_.santhosh_.kumar._?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">TANJORE<br> BOBBLEHEAD DOLL</h1>
+                        <p class="home__description">
+                            Latest arrival of the new Tanjore doll with traditional value and unique handicraft design.
+                            
+                        </p>
+                        <span class="home__price"> ₹900</span>
+
+
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                        <div class="home__btns">
+                            <a href="products.html" class="button button--gray button--small">
+                                Discover
+                            </a>
+
+                            <button 
+                            class="button home__button" id="add-to-cart-id">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="image/img5.jpeg" alt="" class="home__img">
+                    </div>
+    
+                    
+    
+                    <div class="home__data">
+                        <h1 class="home__title">NEW SAREE <br> COLLECTIONS</h1>
+                        <p class="home__description">
+                            Latest arrival of the new sungudi saree, 
+                            with historic design.
+                        </p>
+                        <span class="home__price"> ₹699</span>
+
+
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Discover
+                            </a>
+
+                            <button class="button home__button">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    TRADITIONAL
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="image/img2.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data" >
+                            <h3 class="featured__title">Handicrafts</h3>
+                            <span class="featured__price">₹799</span>
+                        </div>
+
+                        <button  class="button featured__button">ADD TO BAG</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="image/img3.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Chettinad Masala</h3>
+                            <span class="featured__price">₹259</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO BAG</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="image/img4.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Sungudi Saree</h3>
+                            <span class="featured__price">₹890</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO BAG</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container" id="our-story">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            Our Story
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Inspired By Traditional <br>  Product
+                        </h1>
+    
+                        <p class="story__description">
+                            Welcome to RINEVUOS, where Tamil Nadu's heritage meets innovation. We empower artisans, preserve traditions, and offer quality products. Explore the state's diversity through handcrafted items. Join us in supporting local communities and uncovering Tamil Nadu's rich heritage.
+                        </p>
+    
+                        <a href="#blank" class="button button--small">Discover</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="image/img17.jpg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Products
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="image/img7.jpg" alt="" class="products__img">
+                        <h3 class="products__title">Eucalyptus Oil</h3>
+                        <span class="products__price">₹1500</span>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="image/img10.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title"> Dancing Doll</h3>
+                        <span class="products__price">₹1350</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="image/img9.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">Bronze Casting</h3>
+                        <span class="products__price">₹870</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="image/img12.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Wooden Artifacts</h3>
+                        <span class="products__price">₹650</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="image/img14.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">Musical Instrument</h3>
+                        <span class="products__price">₹950</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="image/img5.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title"> Sarees</h3>
+                        <span class="products__price">₹1350</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Directing and leading the product development process, which involves conceiving new product ideas, conducting market research, and collaborating with design and engineering teams to bring new products to market.
+                                </p>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="image/img19.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Santhoshkumar</span>
+                                        <span class="testimonial__perfil-detail">Director</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Providing vision, leadership, and direction to the company's employees and other executives. Setting clear goals and objectives for the organization and motivating teams to achieve them.
+                                </p>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="image/img20.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Makeshwar</span>
+                                        <span class="testimonial__perfil-detail">CEO</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Managing the entire product lifecycle, from product planning and development to pricing, positioning, and promotion. Ensuring that products meet customer needs and are competitive in the market.
+                                </p>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="image/img22.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Gowrishankar</span>
+                                        <span class="testimonial__perfil-detail">Sales Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="image/img21.png" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">
+                    Offers
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Offer</span>
+        
+                                <img src="image/img15.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Coir Products</h3>
+                                    <span class="new__price">₹980</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO BAG</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Offer</span>
+        
+                                <img src="image/img11.webp" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Turmeric Powder</h3>
+                                    <span class="new__price">₹1150</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO BAG</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Offer</span>
+        
+                                <img src="image/img13.webp" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Kalamkari</h3>
+                                    <span class="new__price">₹750</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO BAG</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Offer</span>
+        
+                                <img src="image/img16.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">palm leaf </h3>
+                                    <span class="new__price">₹1590</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO BAG</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Subscribe Our <br> RINEVUOS</h2>
+                        <p class="newsletter__description">
+                            Don't miss out on your discounts. Subscribe to our email 
+                            RINEVUOS@gmail.com to get the best offers, discounts, coupons, 
+                            gifts and much more.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list">
+                        <li>Refund Policy</li>
+                        <li>Shipping Policy</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">RINEVUOS@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">+91 8220912598</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Dindigul-624 001</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Palani Road</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social Network</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/profile.php?id=100074073552733&mibextid=2JQ9oc" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://instagram.com/_.santhosh_.kumar._?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169;RINEVUOS. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

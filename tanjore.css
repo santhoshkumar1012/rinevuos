@@ -1,0 +1,36 @@
+.home__img-bgg {
+    background-color: var(--first-color);
+    margin-top: 5%;
+    width: 480px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-self: flex-end;
+    transform: translateX(1.5rem);
+  }
+
+  .home__img{
+    margin-bottom:1.5%;
+  }
+  .home__titlee {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mb-1);
+    color:#ffbb72;
+
+  }
+
+  .new__containerr {
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 1024px;
+    margin-top: -10%;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+ 
+  a.discover_button{
+    color: white;
+  }
+

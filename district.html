@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>RINEVUOS</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="district.css">
+
+
+
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="signedin.html#home" class="nav__logo">
+                <!-- <i class='bx bxs-watch nav__logo-icon'></i>  -->
+                RINEVUOS
+               <!-- <i class="fa-solid fa-earth-asia"></i>-->
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="signedin.html" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#products" class="nav__link">PRODUCTS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#new" class="nav__link">OFFERS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="signedin.html#" class="nav__link">SELLER</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="district.html" class="nav__link">SHOP BY DISTRICT</a>
+                    </li>
+                     
+
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <div class="nav__user" id="user">
+                    <i class="bx bx-user" aria-hidden="true"></i>
+                </div>
+
+                <div class="nav__search" id="nav-search">
+                    <i class="bx bx-search"></i>
+                </div>
+                <div>
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i  class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+        <h2 class="cart__title-center">MY BAG</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="image/image-product-1.jpg" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Tanjore Bobblehead Doll</h3>
+                    <span class="cart__price">₹900</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="image/img2.jpg" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Handicrafts</h3>
+                    <span class="cart__price">₹1050</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="image/img3.jpg" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Chettinad Masala</h3>
+                    <span class="cart__price">₹850</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="image/img4.jpg" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Sungudi Saree</h3>
+                    <span class="cart__price">₹980</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">4 items</span>
+            <button class="button checkout__button">CHECKOUT</button>
+            <span class="cart__prices-total">₹3780</span>
+        </div>
+    </div>
+        <main class="main">
+            <!--==================== district ====================-->
+            <section class="district-list" id="district-list">
+                <div class="district__container container grid">
+    
+                    <div class="district__data">
+                        <h1 class="district__title">SHOP BY DISTRICTS</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="districts section container" id="districts">            
+            <div class="districts__container grid">
+                
+                        <article class="new__card swiper-slide">    
+                            <img src="image/ariyalur.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Ariyalur</h3>
+                            </div>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+    
+                            <img src="image/chengalpet.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Chengalpet</h3>
+                            </div>
+    
+                        </article>
+
+                        <article class="new__card swiper-slide">
+    
+                            <img src="image/chennai.jpg" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Chennai</h3>
+                            </div>
+    
+                        </article>
+
+                        <article class="new__card swiper-slide">
+    
+                            <img src="image/coimbatore.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Coimbatore</h3>
+                            </div>
+    
+                        </article>
+                    </article>
+
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/cuddalore.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Cuddalore</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/dharmapuri.jpg" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Dharmapuri</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Dindigul.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Dindigul</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Erode.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Erode</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Kallakurichi.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Kallakurichi</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/kancheepuram.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Kancheepuram</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+                        <img src="image/Kanyakumari.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Kanniyakumari</h3>
+                        </div>
+                    </article>
+                    <article class="new__card swiper-slide">
+                        <img src="image/KARUR.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Karur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+                        <img src="image/krishnagiri.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Krishnagiri</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/madurai.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Madurai</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Mayiladuthurai.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Mayiladuthurai</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/nagapattinam.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Nagapattinam</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/namakkal.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Namakkal</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Peramballur.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Perambalur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Pudukottai.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Pudukkottai</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Ramanathapuram.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Ramanad</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Ranipet.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Ranipet</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/salem.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Salem</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Sivagangai.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Sivagangai</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Tenkasi.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tenkasi</h3>
+                        </div>
+
+                    </article>
+                    
+                    <article  class="new__card swiper-slide">
+                        <a href="tanjore.html">
+
+                        <img src="image/Tanjore.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tanjore</h3>
+                        </div>
+                    </a>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Theni.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Theni</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Thiruvallur.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Thiruvallur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/tiruvarur.jpg" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Thiruvarur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Thoothukudi.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tuticorin</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Trichy.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Trichy</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Tirunelveli.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tirunelveli</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Tirupathur.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tirupathur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Tiruppur.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tiruppur</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Thiruvannamalai.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Tiruvannamalai</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Nilgiris.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">The Nilgiris</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Vellore.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Vellore</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Villupuram.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Viluppuram</h3>
+                        </div>
+
+                    </article>
+                    <article class="new__card swiper-slide">
+
+                        <img src="image/Virudhunagar.png" alt="" class="new__img">
+                        <div class="new__data">
+                            <h3 class="new__title">Virudhunagar</h3>
+                        </div>
+
+                    </article>
+
+                    </div>
+                    </div>
+                </div>
+                
+            </section>
+
+        
+                    
+
+            <a href="#" class="scrollup" id="scroll-up"> 
+                <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+            </a>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

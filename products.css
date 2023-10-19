@@ -1,0 +1,264 @@
+/* GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700;800;900&display=swap');
+
+:root{
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 77%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(230, 30%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --black-for-lightbox-background: hsl(0, 0%, 0%);
+}
+
+.product_page{
+    margin-left: -12%;
+    margin-right: -12%;
+
+}
+
+/* HEADER STYLES */
+
+
+#logo{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-right: 10rem;
+}
+
+
+#close-btn{
+    display: none;
+}
+
+/* cart STYLES END */
+
+
+
+
+/* MAIN CONTENT STYLES */
+
+    
+.product{
+    display: grid;
+    grid-template: 100% / 41% 41%;
+    padding: 6rem 25rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-images{
+    height: 100%;
+    position: relative;
+}
+.main-img{
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.product .carousel-btn{
+    display: none;
+}
+.product .previous-btn{
+    left: 1.5rem;
+}
+.product .next-btn{
+    right: 1.5rem;
+}
+.img-selector{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.img-selector img{
+    width: 20%;
+    height: auto;
+    border-radius: 1rem;
+}
+.img-selector img:hover{
+    cursor: pointer;
+    opacity: .6;
+    border: 3px solid var(--orange);
+}
+.selected{
+    opacity: .6;
+    border: 3px solid var(--orange);
+}
+.product-info h3{
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.product-info h2{
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+.product-info p{
+    font-size: 1.3rem;
+    text-align: justify;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.product-info .price-info{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 2rem;
+}
+.product-info .product-price{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.product-info .discount{
+    margin-left: 1rem;
+    background-color: var(--light-grayish-blue);
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.former-price{
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+.purchase-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity-selector{
+    display: flex;
+    width: 35%;
+    height: 4.2rem;
+}
+.quantity-selector button, .quantity-selector input{
+    width: 33.33%;
+    height: 100%;
+    border: none;
+    background-color: var(--light-grayish-blue);
+    text-align: center;
+    font-weight: 900;
+}
+.quantity-selector input{
+    cursor: auto;
+}
+.quantity-selector input:focus{
+    outline: none;
+}
+.quantity-selector button{
+    border-radius: .5rem;
+    color: var(--orange);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.quantity-selector button:hover{
+    font-size: 3rem;
+}
+.add-to-cart-btn{
+    width: 60%;
+    height: 4.2rem;
+    border: none;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+.add-to-cart-btn:hover{
+    transform: scale(1.05);
+    background-color: var(--pale-orange);
+}
+/* MAIN CONTENT STYLES END */
+
+
+/* LIGHT BOX STYLES */
+#light-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100;
+}
+#light-box .product-images{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+#light-box .img-selector{
+    padding: 0 4rem;
+}
+.carousel-btn{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: .3rem;
+    top: 45%;
+    cursor: pointer;
+    z-index: 10;
+}
+#light-box .carousel-btn{
+    display: block;
+}
+.carousel-btn img{
+    width: 1.5rem;
+    height: 2.5rem;
+    color: white;
+}
+#light-box .previous-btn{
+    left: -1.5rem;
+}
+#light-box .next-btn{
+    right: -1.5rem;
+}
+#close-light-box-btn{
+    width: 1.8rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    fill: white;
+}
+#close-light-box-btn:hover{
+    fill: var(--orange);
+}
+#light-box.show{
+    display: flex;
+}
+/* LIGHT BOX STYLES */
+
+
+.attribution{ 
+    font-size: 1.5rem; 
+    text-align: center; 
+    padding: 0 3rem;
+}
+
+/* ANIMATIONS */
+
+
+
+/*SMALL DEVICES */
